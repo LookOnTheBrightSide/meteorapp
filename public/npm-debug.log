@@ -1,0 +1,780 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'iron-meteor' ]
+2 info using npm@2.7.5
+3 info using node@v0.12.2
+4 verbose node symlink /usr/local/bin/node
+5 silly cache add args [ 'iron-meteor', null ]
+6 verbose cache add spec iron-meteor
+7 silly cache add parsed spec { raw: 'iron-meteor',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'iron-meteor',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed iron-meteor@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'iron-meteor', range: '*', hasData: false }
+12 silly mapToRegistry name iron-meteor
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/iron-meteor
+16 verbose addNameRange registry:https://registry.npmjs.org/iron-meteor not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/iron-meteor
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 22:13:45
+20 verbose request id 60ff6f40329062fe
+21 http request GET https://registry.npmjs.org/iron-meteor
+22 http 200 https://registry.npmjs.org/iron-meteor
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"756BU7SP9KV1BSJXB9UQLS1R0"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '14203',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Thu, 28 May 2015 20:13:46 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-lcy1120-LCY',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1432844026.217876,VS0,VE93',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving iron-meteor to /Users/Mysterion/.npm/registry.npmjs.org/iron-meteor/.cache.json
+25 silly addNameRange number 2 { name: 'iron-meteor', range: '*', hasData: true }
+26 silly addNameRange versions [ 'iron-meteor', [ '1.0.0', '1.1.0', '1.1.1', '1.1.2' ] ]
+27 verbose addNamed iron-meteor@1.1.2
+28 silly addNamed semver.valid 1.1.2
+29 silly addNamed semver.validRange 1.1.2
+30 silly mapToRegistry name iron-meteor
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/iron-meteor
+34 verbose addRemoteTarball https://registry.npmjs.org/iron-meteor/-/iron-meteor-1.1.2.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/iron-meteor/-/iron-meteor-1.1.2.tgz',
+35 verbose addRemoteTarball   '9b65ae789d776a16f9853a8d832dda257eecf8e1' ]
+36 info retry fetch attempt 1 at 22:13:46
+37 info attempt registry request try #1 at 22:13:46
+38 http fetch GET https://registry.npmjs.org/iron-meteor/-/iron-meteor-1.1.2.tgz
+39 http fetch 200 https://registry.npmjs.org/iron-meteor/-/iron-meteor-1.1.2.tgz
+40 silly fetchAndShaCheck shasum 9b65ae789d776a16f9853a8d832dda257eecf8e1
+41 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/iron-meteor/-/iron-meteor-1.1.2.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for iron-meteor@1.1.2
+43 silly cache afterAdd iron-meteor@1.1.2
+44 verbose afterAdd /Users/Mysterion/.npm/iron-meteor/1.1.2/package/package.json not in flight; writing
+45 verbose afterAdd /Users/Mysterion/.npm/iron-meteor/1.1.2/package/package.json written
+46 silly install resolved [ { name: 'iron-meteor',
+46 silly install resolved     version: '1.1.2',
+46 silly install resolved     description: 'A command line tool for scaffolding Meteor applications.',
+46 silly install resolved     homepage: 'https://github.com/iron-meteor/iron-cli',
+46 silly install resolved     bugs:
+46 silly install resolved      { url: 'https://github.com/iron-meteor/iron-cli/issues',
+46 silly install resolved        email: 'chris@eventedmind.com' },
+46 silly install resolved     scripts: { test: 'mocha test/integration' },
+46 silly install resolved     author: { name: 'Chris Mather', email: 'chris@eventedmind.com' },
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     dependencies:
+46 silly install resolved      { 'cli-color': '0.2.3',
+46 silly install resolved        minimist: '0.0.8',
+46 silly install resolved        underscore: '1.3.3',
+46 silly install resolved        'cli-table': '0.3.0',
+46 silly install resolved        ejs: '0.8.5',
+46 silly install resolved        fibers: '1.0.5',
+46 silly install resolved        'single-line-log': '0.4.1',
+46 silly install resolved        'shell-source': '1.0.1',
+46 silly install resolved        xtend: '^4.0.0' },
+46 silly install resolved     bin: { iron: './bin/iron' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { chai: '^1.9.1',
+46 silly install resolved        chdir: '0.0.0',
+46 silly install resolved        'concat-stream': '^1.4.6',
+46 silly install resolved        mkdirp: '^0.5.0',
+46 silly install resolved        mocha: '^1.21.4',
+46 silly install resolved        rimraf: '^2.2.8' },
+46 silly install resolved     contributors:
+46 silly install resolved      [ [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object] ],
+46 silly install resolved     gitHead: 'efacb1402f0609b50f16b5cb81ef0373e63bf69e',
+46 silly install resolved     _id: 'iron-meteor@1.1.2',
+46 silly install resolved     _shasum: '9b65ae789d776a16f9853a8d832dda257eecf8e1',
+46 silly install resolved     _from: 'iron-meteor@*',
+46 silly install resolved     _npmVersion: '2.0.0',
+46 silly install resolved     _npmUser: { name: 'cmather', email: 'chris@eventedmind.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '9b65ae789d776a16f9853a8d832dda257eecf8e1',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/iron-meteor/-/iron-meteor-1.1.2.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/iron-meteor/-/iron-meteor-1.1.2.tgz' } ]
+47 info install iron-meteor@1.1.2 into /usr/local/lib
+48 info installOne iron-meteor@1.1.2
+49 verbose installOne of iron-meteor to /usr/local/lib not in flight; installing
+50 verbose lock using /Users/Mysterion/.npm/_locks/iron-meteor-dd7c95e3a48c57c7.lock for /usr/local/lib/node_modules/iron-meteor
+51 silly install write writing iron-meteor 1.1.2 to /usr/local/lib/node_modules/iron-meteor
+52 silly cache addNamed cb iron-meteor@1.1.2
+53 verbose unbuild lib/node_modules/iron-meteor
+54 silly gentlyRm /usr/local/lib/node_modules/iron-meteor is being purged from base /usr/local
+55 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/iron-meteor
+56 verbose tar unpack /Users/Mysterion/.npm/iron-meteor/1.1.2/package.tgz
+57 verbose tar unpacking to /usr/local/lib/node_modules/iron-meteor
+58 silly gentlyRm /usr/local/lib/node_modules/iron-meteor is being purged
+59 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/iron-meteor
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry AUTHORS
+65 silly gunzTarPerm extractEntry History.md
+66 silly gunzTarPerm modified mode [ 'History.md', 384, 420 ]
+67 silly gunzTarPerm extractEntry bin/iron
+68 silly gunzTarPerm extractEntry lib/command.js
+69 silly gunzTarPerm extractEntry lib/config.js
+70 silly gunzTarPerm extractEntry lib/generator.js
+71 silly gunzTarPerm extractEntry lib/iron.js
+72 silly gunzTarPerm extractEntry lib/tools.js
+73 silly gunzTarPerm extractEntry lib/commands/build.js
+74 silly gunzTarPerm extractEntry lib/commands/create.js
+75 silly gunzTarPerm extractEntry lib/commands/generate.js
+76 silly gunzTarPerm extractEntry lib/commands/help.js
+77 silly gunzTarPerm extractEntry lib/commands/init.js
+78 silly gunzTarPerm extractEntry lib/commands/migrate.js
+79 silly gunzTarPerm extractEntry lib/commands/run.js
+80 silly gunzTarPerm extractEntry lib/commands/test.js
+81 silly gunzTarPerm extractEntry lib/generators/collection.js
+82 silly gunzTarPerm extractEntry lib/generators/controller.js
+83 silly gunzTarPerm extractEntry lib/generators/publish.js
+84 silly gunzTarPerm extractEntry lib/generators/route.js
+85 silly gunzTarPerm extractEntry lib/generators/scaffold.js
+86 silly gunzTarPerm extractEntry lib/generators/stylesheet.js
+87 silly gunzTarPerm extractEntry lib/generators/template.js
+88 silly gunzTarPerm extractEntry lib/templates/app/client/.gitkeep
+89 silly gunzTarPerm extractEntry lib/templates/app/client/collections/.gitkeep
+90 silly gunzTarPerm extractEntry lib/templates/app/client/head.html
+91 silly gunzTarPerm extractEntry lib/templates/app/client/head.html.jade
+92 silly gunzTarPerm extractEntry lib/templates/app/client/lib/.gitkeep
+93 silly gunzTarPerm extractEntry lib/templates/app/client/stylesheets/.gitkeep
+94 silly gunzTarPerm extractEntry lib/templates/app/client/templates/.gitkeep
+95 silly gunzTarPerm extractEntry lib/templates/app/client/templates/layouts/master_layout/master_layout.js
+96 silly gunzTarPerm extractEntry lib/templates/app/client/templates/layouts/master_layout/master_layout.html
+97 silly gunzTarPerm extractEntry lib/templates/app/client/templates/layouts/master_layout/master_layout.html.jade
+98 silly gunzTarPerm extractEntry lib/templates/app/client/templates/layouts/master_layout/master_layout.js.coffee
+99 silly gunzTarPerm extractEntry lib/templates/app/client/templates/shared/loading/loading.html
+100 silly gunzTarPerm extractEntry lib/templates/app/client/templates/shared/loading/loading.html.jade
+101 silly gunzTarPerm extractEntry lib/templates/app/client/templates/shared/not_found/not_found.html
+102 silly gunzTarPerm extractEntry lib/templates/app/client/templates/shared/not_found/not_found.html.jade
+103 silly gunzTarPerm extractEntry lib/templates/app/lib/methods.js
+104 silly gunzTarPerm extractEntry lib/templates/app/lib/routes.js
+105 silly gunzTarPerm extractEntry lib/templates/app/lib/.gitkeep
+106 silly gunzTarPerm extractEntry lib/templates/app/lib/collections/.gitkeep
+107 silly gunzTarPerm extractEntry lib/templates/app/lib/controllers/home_controller.js
+108 silly gunzTarPerm extractEntry lib/templates/app/lib/controllers/.gitkeep
+109 silly gunzTarPerm extractEntry lib/templates/app/lib/controllers/home_controller.js.coffee
+110 silly gunzTarPerm extractEntry lib/templates/app/lib/methods.js.coffee
+111 silly gunzTarPerm extractEntry lib/templates/app/lib/routes.js.coffee
+112 silly gunzTarPerm extractEntry lib/templates/app/packages/.gitkeep
+113 silly gunzTarPerm extractEntry lib/templates/app/private/.gitkeep
+114 silly gunzTarPerm extractEntry lib/templates/app/public/.gitkeep
+115 silly gunzTarPerm extractEntry lib/templates/app/server/bootstrap.js
+116 silly gunzTarPerm extractEntry lib/templates/app/server/methods.js
+117 silly gunzTarPerm extractEntry lib/templates/app/server/publish.js
+118 silly gunzTarPerm extractEntry lib/templates/app/server/.gitkeep
+119 silly gunzTarPerm extractEntry lib/templates/app/server/bootstrap.js.coffee
+120 silly gunzTarPerm extractEntry lib/templates/app/server/collections/.gitkeep
+121 silly gunzTarPerm extractEntry lib/templates/app/server/controllers/.gitkeep
+122 silly gunzTarPerm extractEntry lib/templates/app/server/lib/.gitkeep
+123 silly gunzTarPerm extractEntry lib/templates/app/server/methods.js.coffee
+124 silly gunzTarPerm extractEntry lib/templates/app/server/publish.js.coffee
+125 silly gunzTarPerm extractEntry lib/templates/collection/collection.js
+126 silly gunzTarPerm extractEntry lib/templates/collection/collection.js.coffee
+127 silly gunzTarPerm extractEntry lib/templates/controller/controller.js
+128 silly gunzTarPerm extractEntry lib/templates/controller/controller.js.coffee
+129 silly gunzTarPerm extractEntry lib/templates/methods/methods.js
+130 silly gunzTarPerm extractEntry lib/templates/methods/methods.js.coffee
+131 silly gunzTarPerm extractEntry lib/templates/project/.iron/config.json
+132 silly gunzTarPerm extractEntry lib/templates/project/bin/.gitkeep
+133 silly gunzTarPerm extractEntry lib/templates/project/build/README
+134 silly gunzTarPerm extractEntry lib/templates/project/build/.gitkeep
+135 silly gunzTarPerm extractEntry lib/templates/project/config/.gitkeep
+136 silly gunzTarPerm extractEntry lib/templates/project/config/development/env.sh
+137 silly gunzTarPerm extractEntry lib/templates/project/config/development/settings.json
+138 silly gunzTarPerm extractEntry lib/templates/publish/publish.js
+139 silly gunzTarPerm extractEntry lib/templates/publish/publish.js.coffee
+140 silly gunzTarPerm extractEntry lib/templates/route/route.js
+141 silly gunzTarPerm extractEntry lib/templates/route/route.js.coffee
+142 silly gunzTarPerm extractEntry lib/templates/stylesheet/stylesheet.css
+143 silly gunzTarPerm extractEntry lib/templates/stylesheet/stylesheet.css.less
+144 silly gunzTarPerm extractEntry lib/templates/stylesheet/stylesheet.css.scss
+145 silly gunzTarPerm extractEntry lib/templates/stylesheet/stylesheet.css.styl
+146 silly gunzTarPerm extractEntry lib/templates/template/template.js
+147 silly gunzTarPerm extractEntry lib/templates/template/template.css
+148 silly gunzTarPerm extractEntry lib/templates/template/template.css.less
+149 silly gunzTarPerm extractEntry lib/templates/template/template.css.scss
+150 silly gunzTarPerm extractEntry lib/templates/template/template.css.styl
+151 silly gunzTarPerm extractEntry lib/templates/template/template.html
+152 silly gunzTarPerm extractEntry lib/templates/template/template.html.jade
+153 silly gunzTarPerm extractEntry lib/templates/template/template.js.coffee
+154 silly gunzTarPerm extractEntry lib/tools/exec_sync.js
+155 silly gunzTarPerm extractEntry lib/tools/file_system.js
+156 silly gunzTarPerm extractEntry lib/tools/interactions.js
+157 silly gunzTarPerm extractEntry lib/tools/logging.js
+158 silly gunzTarPerm extractEntry lib/tools/meteor.js
+159 silly gunzTarPerm extractEntry lib/tools/strings.js
+160 silly gunzTarPerm extractEntry test/integration/default.test.js
+161 silly gunzTarPerm extractEntry test/integration/integration_helpers.js
+162 silly gunzTarPerm extractEntry test/integration/fixtures/css/.em/config.json
+163 silly gunzTarPerm extractEntry test/integration/fixtures/css/.meteor/packages
+164 silly gunzTarPerm extractEntry test/integration/fixtures/css/both/router/.gitkeep
+165 silly gunzTarPerm extractEntry test/integration/fixtures/css/client/app.css
+166 silly gunzTarPerm extractEntry test/integration/fixtures/css/client/views/layouts/master_layout/master_layout.css
+167 silly gunzTarPerm extractEntry test/integration/fixtures/css/client/views/shared/loading/loading.css
+168 silly gunzTarPerm extractEntry test/integration/fixtures/css/client/views/shared/not_found/not_found.css
+169 silly gunzTarPerm extractEntry test/integration/fixtures/css/config/development/env.sh
+170 silly gunzTarPerm extractEntry test/integration/fixtures/css/config/development/settings.json
+171 silly gunzTarPerm extractEntry test/integration/fixtures/html/.em/config.json
+172 silly gunzTarPerm extractEntry test/integration/fixtures/html/.meteor/packages
+173 silly gunzTarPerm extractEntry test/integration/fixtures/html/both/router/.gitkeep
+174 silly gunzTarPerm extractEntry test/integration/fixtures/html/client/app.html
+175 silly gunzTarPerm extractEntry test/integration/fixtures/html/client/views/layouts/master_layout/master_layout.html
+176 silly gunzTarPerm extractEntry test/integration/fixtures/html/client/views/shared/loading/loading.html
+177 silly gunzTarPerm extractEntry test/integration/fixtures/html/client/views/shared/not_found/not_found.html
+178 silly gunzTarPerm extractEntry test/integration/fixtures/html/config/development/env.sh
+179 silly gunzTarPerm extractEntry test/integration/fixtures/html/config/development/settings.json
+180 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/.em/config.json
+181 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/.meteor/packages
+182 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/both/app.js
+183 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/both/router/routes.js
+184 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/client/app.js
+185 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/client/views/layouts/master_layout/master_layout.js
+186 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/client/views/shared/loading/loading.js
+187 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/client/views/shared/not_found/not_found.js
+188 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/config/development/env.sh
+189 silly gunzTarPerm extractEntry test/integration/fixtures/javascript/config/development/settings.json
+190 info preinstall iron-meteor@1.1.2
+191 silly prepareForInstallMany adding cli-color@0.2.3 from iron-meteor dependencies
+192 silly prepareForInstallMany adding minimist@0.0.8 from iron-meteor dependencies
+193 silly prepareForInstallMany adding underscore@1.3.3 from iron-meteor dependencies
+194 silly prepareForInstallMany adding cli-table@0.3.0 from iron-meteor dependencies
+195 silly prepareForInstallMany adding ejs@0.8.5 from iron-meteor dependencies
+196 silly prepareForInstallMany adding fibers@1.0.5 from iron-meteor dependencies
+197 silly prepareForInstallMany adding single-line-log@0.4.1 from iron-meteor dependencies
+198 silly prepareForInstallMany adding shell-source@1.0.1 from iron-meteor dependencies
+199 silly prepareForInstallMany adding xtend@^4.0.0 from iron-meteor dependencies
+200 silly cache add args [ 'cli-color@0.2.3', null ]
+201 verbose cache add spec cli-color@0.2.3
+202 silly cache add args [ 'minimist@0.0.8', null ]
+203 verbose cache add spec minimist@0.0.8
+204 silly cache add parsed spec { raw: 'cli-color@0.2.3',
+204 silly cache add   scope: null,
+204 silly cache add   name: 'cli-color',
+204 silly cache add   rawSpec: '0.2.3',
+204 silly cache add   spec: '0.2.3',
+204 silly cache add   type: 'version' }
+205 verbose addNamed cli-color@0.2.3
+206 silly addNamed semver.valid 0.2.3
+207 silly addNamed semver.validRange 0.2.3
+208 silly mapToRegistry name cli-color
+209 silly mapToRegistry using default registry
+210 silly mapToRegistry registry https://registry.npmjs.org/
+211 silly mapToRegistry uri https://registry.npmjs.org/cli-color
+212 verbose addNameVersion registry:https://registry.npmjs.org/cli-color not in flight; fetching
+213 silly cache add parsed spec { raw: 'minimist@0.0.8',
+213 silly cache add   scope: null,
+213 silly cache add   name: 'minimist',
+213 silly cache add   rawSpec: '0.0.8',
+213 silly cache add   spec: '0.0.8',
+213 silly cache add   type: 'version' }
+214 verbose addNamed minimist@0.0.8
+215 silly addNamed semver.valid 0.0.8
+216 silly addNamed semver.validRange 0.0.8
+217 silly mapToRegistry name minimist
+218 silly mapToRegistry using default registry
+219 silly mapToRegistry registry https://registry.npmjs.org/
+220 silly mapToRegistry uri https://registry.npmjs.org/minimist
+221 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+222 silly cache add args [ 'underscore@1.3.3', null ]
+223 verbose cache add spec underscore@1.3.3
+224 silly cache add parsed spec { raw: 'underscore@1.3.3',
+224 silly cache add   scope: null,
+224 silly cache add   name: 'underscore',
+224 silly cache add   rawSpec: '1.3.3',
+224 silly cache add   spec: '1.3.3',
+224 silly cache add   type: 'version' }
+225 verbose addNamed underscore@1.3.3
+226 silly addNamed semver.valid 1.3.3
+227 silly addNamed semver.validRange 1.3.3
+228 silly mapToRegistry name underscore
+229 silly mapToRegistry using default registry
+230 silly mapToRegistry registry https://registry.npmjs.org/
+231 silly mapToRegistry uri https://registry.npmjs.org/underscore
+232 verbose addNameVersion registry:https://registry.npmjs.org/underscore not in flight; fetching
+233 silly cache add args [ 'cli-table@0.3.0', null ]
+234 verbose cache add spec cli-table@0.3.0
+235 silly cache add parsed spec { raw: 'cli-table@0.3.0',
+235 silly cache add   scope: null,
+235 silly cache add   name: 'cli-table',
+235 silly cache add   rawSpec: '0.3.0',
+235 silly cache add   spec: '0.3.0',
+235 silly cache add   type: 'version' }
+236 verbose addNamed cli-table@0.3.0
+237 silly addNamed semver.valid 0.3.0
+238 silly addNamed semver.validRange 0.3.0
+239 silly mapToRegistry name cli-table
+240 silly mapToRegistry using default registry
+241 silly mapToRegistry registry https://registry.npmjs.org/
+242 silly mapToRegistry uri https://registry.npmjs.org/cli-table
+243 verbose addNameVersion registry:https://registry.npmjs.org/cli-table not in flight; fetching
+244 silly cache add args [ 'ejs@0.8.5', null ]
+245 verbose cache add spec ejs@0.8.5
+246 silly cache add parsed spec { raw: 'ejs@0.8.5',
+246 silly cache add   scope: null,
+246 silly cache add   name: 'ejs',
+246 silly cache add   rawSpec: '0.8.5',
+246 silly cache add   spec: '0.8.5',
+246 silly cache add   type: 'version' }
+247 verbose addNamed ejs@0.8.5
+248 silly addNamed semver.valid 0.8.5
+249 silly addNamed semver.validRange 0.8.5
+250 silly mapToRegistry name ejs
+251 silly mapToRegistry using default registry
+252 silly mapToRegistry registry https://registry.npmjs.org/
+253 silly mapToRegistry uri https://registry.npmjs.org/ejs
+254 verbose addNameVersion registry:https://registry.npmjs.org/ejs not in flight; fetching
+255 silly cache add args [ 'fibers@1.0.5', null ]
+256 verbose cache add spec fibers@1.0.5
+257 silly cache add parsed spec { raw: 'fibers@1.0.5',
+257 silly cache add   scope: null,
+257 silly cache add   name: 'fibers',
+257 silly cache add   rawSpec: '1.0.5',
+257 silly cache add   spec: '1.0.5',
+257 silly cache add   type: 'version' }
+258 verbose addNamed fibers@1.0.5
+259 silly addNamed semver.valid 1.0.5
+260 silly addNamed semver.validRange 1.0.5
+261 silly mapToRegistry name fibers
+262 silly mapToRegistry using default registry
+263 silly mapToRegistry registry https://registry.npmjs.org/
+264 silly mapToRegistry uri https://registry.npmjs.org/fibers
+265 verbose addNameVersion registry:https://registry.npmjs.org/fibers not in flight; fetching
+266 silly cache add args [ 'single-line-log@0.4.1', null ]
+267 verbose cache add spec single-line-log@0.4.1
+268 silly cache add parsed spec { raw: 'single-line-log@0.4.1',
+268 silly cache add   scope: null,
+268 silly cache add   name: 'single-line-log',
+268 silly cache add   rawSpec: '0.4.1',
+268 silly cache add   spec: '0.4.1',
+268 silly cache add   type: 'version' }
+269 verbose addNamed single-line-log@0.4.1
+270 silly addNamed semver.valid 0.4.1
+271 silly addNamed semver.validRange 0.4.1
+272 silly mapToRegistry name single-line-log
+273 silly mapToRegistry using default registry
+274 silly mapToRegistry registry https://registry.npmjs.org/
+275 silly mapToRegistry uri https://registry.npmjs.org/single-line-log
+276 verbose addNameVersion registry:https://registry.npmjs.org/single-line-log not in flight; fetching
+277 silly cache add args [ 'shell-source@1.0.1', null ]
+278 verbose cache add spec shell-source@1.0.1
+279 silly cache add parsed spec { raw: 'shell-source@1.0.1',
+279 silly cache add   scope: null,
+279 silly cache add   name: 'shell-source',
+279 silly cache add   rawSpec: '1.0.1',
+279 silly cache add   spec: '1.0.1',
+279 silly cache add   type: 'version' }
+280 verbose addNamed shell-source@1.0.1
+281 silly addNamed semver.valid 1.0.1
+282 silly addNamed semver.validRange 1.0.1
+283 silly mapToRegistry name shell-source
+284 silly mapToRegistry using default registry
+285 silly mapToRegistry registry https://registry.npmjs.org/
+286 silly mapToRegistry uri https://registry.npmjs.org/shell-source
+287 verbose addNameVersion registry:https://registry.npmjs.org/shell-source not in flight; fetching
+288 silly cache add args [ 'xtend@^4.0.0', null ]
+289 verbose cache add spec xtend@^4.0.0
+290 silly cache add parsed spec { raw: 'xtend@^4.0.0',
+290 silly cache add   scope: null,
+290 silly cache add   name: 'xtend',
+290 silly cache add   rawSpec: '^4.0.0',
+290 silly cache add   spec: '>=4.0.0 <5.0.0',
+290 silly cache add   type: 'range' }
+291 verbose addNamed xtend@>=4.0.0 <5.0.0
+292 silly addNamed semver.valid null
+293 silly addNamed semver.validRange >=4.0.0 <5.0.0
+294 silly addNameRange { name: 'xtend', range: '>=4.0.0 <5.0.0', hasData: false }
+295 silly mapToRegistry name xtend
+296 silly mapToRegistry using default registry
+297 silly mapToRegistry registry https://registry.npmjs.org/
+298 silly mapToRegistry uri https://registry.npmjs.org/xtend
+299 verbose addNameRange registry:https://registry.npmjs.org/xtend not in flight; fetching
+300 verbose request uri https://registry.npmjs.org/fibers
+301 verbose request no auth needed
+302 info attempt registry request try #1 at 22:13:48
+303 http request GET https://registry.npmjs.org/fibers
+304 verbose request uri https://registry.npmjs.org/single-line-log
+305 verbose request no auth needed
+306 info attempt registry request try #1 at 22:13:48
+307 http request GET https://registry.npmjs.org/single-line-log
+308 verbose request uri https://registry.npmjs.org/shell-source
+309 verbose request no auth needed
+310 info attempt registry request try #1 at 22:13:48
+311 http request GET https://registry.npmjs.org/shell-source
+312 verbose request uri https://registry.npmjs.org/underscore
+313 verbose request no auth needed
+314 info attempt registry request try #1 at 22:13:48
+315 verbose etag "7C1BRLYGKR5V8HTCKJBBHI6FQ"
+316 http request GET https://registry.npmjs.org/underscore
+317 verbose request uri https://registry.npmjs.org/ejs
+318 verbose request no auth needed
+319 info attempt registry request try #1 at 22:13:48
+320 verbose etag "CUBUN9TGXEOB6Z4BNIOD2C6HY"
+321 http request GET https://registry.npmjs.org/ejs
+322 verbose request uri https://registry.npmjs.org/minimist
+323 verbose request no auth needed
+324 info attempt registry request try #1 at 22:13:48
+325 verbose etag "370D1DLPN618UGORXNWKVD3FO"
+326 http request GET https://registry.npmjs.org/minimist
+327 verbose request uri https://registry.npmjs.org/xtend
+328 verbose request no auth needed
+329 info attempt registry request try #1 at 22:13:48
+330 verbose etag "8XTTKW3A9J6YR7C61JPA20PGX"
+331 http request GET https://registry.npmjs.org/xtend
+332 verbose request uri https://registry.npmjs.org/cli-table
+333 verbose request no auth needed
+334 info attempt registry request try #1 at 22:13:48
+335 verbose etag "36QESLW3R9EKC8S2NSIVL5JYH"
+336 http request GET https://registry.npmjs.org/cli-table
+337 verbose request uri https://registry.npmjs.org/cli-color
+338 verbose request no auth needed
+339 info attempt registry request try #1 at 22:13:48
+340 verbose etag "B92P8D8KYV6YPBLBHN2NYSUEJ"
+341 http request GET https://registry.npmjs.org/cli-color
+342 http 304 https://registry.npmjs.org/xtend
+343 silly get cb [ 304,
+343 silly get   { date: 'Thu, 28 May 2015 20:13:49 GMT',
+343 silly get     via: '1.1 varnish',
+343 silly get     'cache-control': 'max-age=60',
+343 silly get     etag: '"8XTTKW3A9J6YR7C61JPA20PGX"',
+343 silly get     age: '36',
+343 silly get     connection: 'keep-alive',
+343 silly get     'x-served-by': 'cache-lcy1128-LCY',
+343 silly get     'x-cache': 'HIT',
+343 silly get     'x-cache-hits': '1',
+343 silly get     'x-timer': 'S1432844029.407771,VS0,VE0',
+343 silly get     vary: 'Accept' } ]
+344 verbose etag https://registry.npmjs.org/xtend from cache
+345 verbose get saving xtend to /Users/Mysterion/.npm/registry.npmjs.org/xtend/.cache.json
+346 http 200 https://registry.npmjs.org/cli-table
+347 silly get cb [ 200,
+347 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+347 silly get     etag: '"5GWH1PHWSABMKDZREZU6KQJG"',
+347 silly get     'content-type': 'application/json',
+347 silly get     'cache-control': 'max-age=60',
+347 silly get     'content-length': '10950',
+347 silly get     'accept-ranges': 'bytes',
+347 silly get     date: 'Thu, 28 May 2015 20:13:49 GMT',
+347 silly get     via: '1.1 varnish',
+347 silly get     age: '53',
+347 silly get     connection: 'keep-alive',
+347 silly get     'x-served-by': 'cache-lcy1125-LCY',
+347 silly get     'x-cache': 'HIT',
+347 silly get     'x-cache-hits': '1',
+347 silly get     'x-timer': 'S1432844029.419143,VS0,VE0',
+347 silly get     vary: 'Accept' } ]
+348 verbose get saving cli-table to /Users/Mysterion/.npm/registry.npmjs.org/cli-table/.cache.json
+349 silly addNameRange number 2 { name: 'xtend', range: '>=4.0.0 <5.0.0', hasData: true }
+350 silly addNameRange versions [ 'xtend',
+350 silly addNameRange   [ '1.0.0',
+350 silly addNameRange     '1.0.1',
+350 silly addNameRange     '1.0.2',
+350 silly addNameRange     '1.0.3',
+350 silly addNameRange     '2.0.1',
+350 silly addNameRange     '2.0.2',
+350 silly addNameRange     '2.0.3',
+350 silly addNameRange     '2.0.4',
+350 silly addNameRange     '2.0.5',
+350 silly addNameRange     '2.0.6',
+350 silly addNameRange     '2.1.1',
+350 silly addNameRange     '2.1.2',
+350 silly addNameRange     '2.2.0',
+350 silly addNameRange     '3.0.0',
+350 silly addNameRange     '4.0.0' ] ]
+351 verbose addNamed xtend@4.0.0
+352 silly addNamed semver.valid 4.0.0
+353 silly addNamed semver.validRange 4.0.0
+354 silly mapToRegistry name cli-table
+355 silly mapToRegistry using default registry
+356 silly mapToRegistry registry https://registry.npmjs.org/
+357 silly mapToRegistry uri https://registry.npmjs.org/cli-table
+358 verbose addRemoteTarball https://registry.npmjs.org/cli-table/-/cli-table-0.3.0.tgz not in flight; adding
+359 verbose addRemoteTarball [ 'https://registry.npmjs.org/cli-table/-/cli-table-0.3.0.tgz',
+359 verbose addRemoteTarball   '44a43c2641667701e084202bff7aa934128aa13e' ]
+360 info retry fetch attempt 1 at 22:13:49
+361 info attempt registry request try #1 at 22:13:49
+362 http fetch GET https://registry.npmjs.org/cli-table/-/cli-table-0.3.0.tgz
+363 silly cache afterAdd xtend@4.0.0
+364 verbose afterAdd /Users/Mysterion/.npm/xtend/4.0.0/package/package.json not in flight; writing
+365 verbose afterAdd /Users/Mysterion/.npm/xtend/4.0.0/package/package.json written
+366 http 200 https://registry.npmjs.org/shell-source
+367 silly get cb [ 200,
+367 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+367 silly get     etag: '"5C16IL52056FG3WH6BWSSFOIZ"',
+367 silly get     'content-type': 'application/json',
+367 silly get     'cache-control': 'max-age=60',
+367 silly get     'content-length': '9048',
+367 silly get     'accept-ranges': 'bytes',
+367 silly get     date: 'Thu, 28 May 2015 20:13:49 GMT',
+367 silly get     via: '1.1 varnish',
+367 silly get     age: '0',
+367 silly get     connection: 'keep-alive',
+367 silly get     'x-served-by': 'cache-lcy1122-LCY',
+367 silly get     'x-cache': 'MISS',
+367 silly get     'x-cache-hits': '0',
+367 silly get     'x-timer': 'S1432844029.302069,VS0,VE148',
+367 silly get     vary: 'Accept' } ]
+368 verbose get saving shell-source to /Users/Mysterion/.npm/registry.npmjs.org/shell-source/.cache.json
+369 silly mapToRegistry name shell-source
+370 silly mapToRegistry using default registry
+371 silly mapToRegistry registry https://registry.npmjs.org/
+372 silly mapToRegistry uri https://registry.npmjs.org/shell-source
+373 verbose addRemoteTarball https://registry.npmjs.org/shell-source/-/shell-source-1.0.1.tgz not in flight; adding
+374 verbose addRemoteTarball [ 'https://registry.npmjs.org/shell-source/-/shell-source-1.0.1.tgz',
+374 verbose addRemoteTarball   '263fb078c31717ff89a1942a27e4de18c32e269c' ]
+375 info retry fetch attempt 1 at 22:13:49
+376 info attempt registry request try #1 at 22:13:49
+377 http fetch GET https://registry.npmjs.org/shell-source/-/shell-source-1.0.1.tgz
+378 http 200 https://registry.npmjs.org/minimist
+379 silly get cb [ 200,
+379 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+379 silly get     etag: '"BYQL3TBHIX23A3GJZ3CCMFB9D"',
+379 silly get     'content-type': 'application/json',
+379 silly get     'cache-control': 'max-age=60',
+379 silly get     'content-length': '22635',
+379 silly get     'accept-ranges': 'bytes',
+379 silly get     date: 'Thu, 28 May 2015 20:13:49 GMT',
+379 silly get     via: '1.1 varnish',
+379 silly get     age: '39',
+379 silly get     connection: 'keep-alive',
+379 silly get     'x-served-by': 'cache-lcy1129-LCY',
+379 silly get     'x-cache': 'HIT',
+379 silly get     'x-cache-hits': '2',
+379 silly get     'x-timer': 'S1432844029.389746,VS0,VE0',
+379 silly get     vary: 'Accept' } ]
+380 verbose get saving minimist to /Users/Mysterion/.npm/registry.npmjs.org/minimist/.cache.json
+381 silly mapToRegistry name minimist
+382 silly mapToRegistry using default registry
+383 silly mapToRegistry registry https://registry.npmjs.org/
+384 silly mapToRegistry uri https://registry.npmjs.org/minimist
+385 verbose addRemoteTarball https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz not in flight; adding
+386 verbose addRemoteTarball [ 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+386 verbose addRemoteTarball   '857fcabfc3397d2625b8228262e86aa7a011b05d' ]
+387 info retry fetch attempt 1 at 22:13:49
+388 info attempt registry request try #1 at 22:13:49
+389 http fetch GET https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+390 http 200 https://registry.npmjs.org/cli-color
+391 silly get cb [ 200,
+391 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+391 silly get     etag: '"9PNSOCYV8NYTQSBDOWU9X2C0V"',
+391 silly get     'content-type': 'application/json',
+391 silly get     'cache-control': 'max-age=60',
+391 silly get     'content-length': '55276',
+391 silly get     'accept-ranges': 'bytes',
+391 silly get     date: 'Thu, 28 May 2015 20:13:49 GMT',
+391 silly get     via: '1.1 varnish',
+391 silly get     age: '6',
+391 silly get     connection: 'keep-alive',
+391 silly get     'x-served-by': 'cache-lcy1135-LCY',
+391 silly get     'x-cache': 'HIT',
+391 silly get     'x-cache-hits': '2',
+391 silly get     'x-timer': 'S1432844029.438668,VS0,VE0',
+391 silly get     vary: 'Accept' } ]
+392 verbose get saving cli-color to /Users/Mysterion/.npm/registry.npmjs.org/cli-color/.cache.json
+393 silly mapToRegistry name cli-color
+394 silly mapToRegistry using default registry
+395 silly mapToRegistry registry https://registry.npmjs.org/
+396 silly mapToRegistry uri https://registry.npmjs.org/cli-color
+397 verbose addRemoteTarball https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz not in flight; adding
+398 verbose addRemoteTarball [ 'https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz',
+398 verbose addRemoteTarball   '0a25ceae5a6a1602be7f77d28563c36700274e88' ]
+399 info retry fetch attempt 1 at 22:13:50
+400 info attempt registry request try #1 at 22:13:50
+401 http fetch GET https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+402 http 200 https://registry.npmjs.org/fibers
+403 silly get cb [ 200,
+403 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+403 silly get     etag: '"13R1F7WLDHAHUQC82VVDAJQYW"',
+403 silly get     'content-type': 'application/json',
+403 silly get     'cache-control': 'max-age=60',
+403 silly get     'content-length': '51701',
+403 silly get     'accept-ranges': 'bytes',
+403 silly get     date: 'Thu, 28 May 2015 20:13:49 GMT',
+403 silly get     via: '1.1 varnish',
+403 silly get     age: '0',
+403 silly get     connection: 'keep-alive',
+403 silly get     'x-served-by': 'cache-lcy1122-LCY',
+403 silly get     'x-cache': 'HIT',
+403 silly get     'x-cache-hits': '1',
+403 silly get     'x-timer': 'S1432844029.279779,VS0,VE158',
+403 silly get     vary: 'Accept' } ]
+404 verbose get saving fibers to /Users/Mysterion/.npm/registry.npmjs.org/fibers/.cache.json
+405 silly mapToRegistry name fibers
+406 silly mapToRegistry using default registry
+407 silly mapToRegistry registry https://registry.npmjs.org/
+408 silly mapToRegistry uri https://registry.npmjs.org/fibers
+409 verbose addRemoteTarball https://registry.npmjs.org/fibers/-/fibers-1.0.5.tgz not in flight; adding
+410 verbose addRemoteTarball [ 'https://registry.npmjs.org/fibers/-/fibers-1.0.5.tgz',
+410 verbose addRemoteTarball   '3bea1f697d8540bb3904961ad50939bdee1df678' ]
+411 info retry fetch attempt 1 at 22:13:50
+412 info attempt registry request try #1 at 22:13:50
+413 http fetch GET https://registry.npmjs.org/fibers/-/fibers-1.0.5.tgz
+414 http 200 https://registry.npmjs.org/single-line-log
+415 silly get cb [ 200,
+415 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+415 silly get     etag: '"5OD5I5GDMHCPETPZ7SIWPUIF7"',
+415 silly get     'content-type': 'application/json',
+415 silly get     'cache-control': 'max-age=60',
+415 silly get     'content-length': '10908',
+415 silly get     'accept-ranges': 'bytes',
+415 silly get     date: 'Thu, 28 May 2015 20:13:49 GMT',
+415 silly get     via: '1.1 varnish',
+415 silly get     age: '0',
+415 silly get     connection: 'keep-alive',
+415 silly get     'x-served-by': 'cache-lcy1127-LCY',
+415 silly get     'x-cache': 'MISS',
+415 silly get     'x-cache-hits': '0',
+415 silly get     'x-timer': 'S1432844029.293997,VS0,VE159',
+415 silly get     vary: 'Accept' } ]
+416 verbose get saving single-line-log to /Users/Mysterion/.npm/registry.npmjs.org/single-line-log/.cache.json
+417 silly mapToRegistry name single-line-log
+418 silly mapToRegistry using default registry
+419 silly mapToRegistry registry https://registry.npmjs.org/
+420 silly mapToRegistry uri https://registry.npmjs.org/single-line-log
+421 verbose addRemoteTarball https://registry.npmjs.org/single-line-log/-/single-line-log-0.4.1.tgz not in flight; adding
+422 verbose addRemoteTarball [ 'https://registry.npmjs.org/single-line-log/-/single-line-log-0.4.1.tgz',
+422 verbose addRemoteTarball   '87a55649f749d783ec0dcd804e8140d9873c7cee' ]
+423 info retry fetch attempt 1 at 22:13:50
+424 info attempt registry request try #1 at 22:13:50
+425 http fetch GET https://registry.npmjs.org/single-line-log/-/single-line-log-0.4.1.tgz
+426 http fetch 200 https://registry.npmjs.org/cli-table/-/cli-table-0.3.0.tgz
+427 silly fetchAndShaCheck shasum 44a43c2641667701e084202bff7aa934128aa13e
+428 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/cli-table/-/cli-table-0.3.0.tgz not in flight; adding
+429 verbose addTmpTarball already have metadata; skipping unpack for cli-table@0.3.0
+430 silly cache afterAdd cli-table@0.3.0
+431 verbose afterAdd /Users/Mysterion/.npm/cli-table/0.3.0/package/package.json not in flight; writing
+432 verbose afterAdd /Users/Mysterion/.npm/cli-table/0.3.0/package/package.json written
+433 http fetch 200 https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+434 silly fetchAndShaCheck shasum 0a25ceae5a6a1602be7f77d28563c36700274e88
+435 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz not in flight; adding
+436 verbose addTmpTarball already have metadata; skipping unpack for cli-color@0.2.3
+437 silly cache afterAdd cli-color@0.2.3
+438 verbose afterAdd /Users/Mysterion/.npm/cli-color/0.2.3/package/package.json not in flight; writing
+439 verbose afterAdd /Users/Mysterion/.npm/cli-color/0.2.3/package/package.json written
+440 http fetch 200 https://registry.npmjs.org/shell-source/-/shell-source-1.0.1.tgz
+441 silly fetchAndShaCheck shasum 263fb078c31717ff89a1942a27e4de18c32e269c
+442 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/shell-source/-/shell-source-1.0.1.tgz not in flight; adding
+443 verbose addTmpTarball already have metadata; skipping unpack for shell-source@1.0.1
+444 http fetch 200 https://registry.npmjs.org/single-line-log/-/single-line-log-0.4.1.tgz
+445 silly fetchAndShaCheck shasum 87a55649f749d783ec0dcd804e8140d9873c7cee
+446 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/single-line-log/-/single-line-log-0.4.1.tgz not in flight; adding
+447 verbose addTmpTarball already have metadata; skipping unpack for single-line-log@0.4.1
+448 silly cache afterAdd shell-source@1.0.1
+449 verbose afterAdd /Users/Mysterion/.npm/shell-source/1.0.1/package/package.json not in flight; writing
+450 verbose afterAdd /Users/Mysterion/.npm/shell-source/1.0.1/package/package.json written
+451 silly cache afterAdd single-line-log@0.4.1
+452 verbose afterAdd /Users/Mysterion/.npm/single-line-log/0.4.1/package/package.json not in flight; writing
+453 verbose afterAdd /Users/Mysterion/.npm/single-line-log/0.4.1/package/package.json written
+454 http fetch 200 https://registry.npmjs.org/fibers/-/fibers-1.0.5.tgz
+455 http fetch 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+456 silly fetchAndShaCheck shasum 857fcabfc3397d2625b8228262e86aa7a011b05d
+457 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/minimist/-/minimist-0.0.8.tgz not in flight; adding
+458 verbose addTmpTarball already have metadata; skipping unpack for minimist@0.0.8
+459 silly cache afterAdd minimist@0.0.8
+460 verbose afterAdd /Users/Mysterion/.npm/minimist/0.0.8/package/package.json not in flight; writing
+461 verbose afterAdd /Users/Mysterion/.npm/minimist/0.0.8/package/package.json written
+462 http 200 https://registry.npmjs.org/underscore
+463 silly get cb [ 200,
+463 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+463 silly get     etag: '"8N5IQU2HZ395WKYNUP9MW64HM"',
+463 silly get     'content-type': 'application/json',
+463 silly get     'cache-control': 'max-age=60',
+463 silly get     'content-length': '40667',
+463 silly get     'accept-ranges': 'bytes',
+463 silly get     date: 'Thu, 28 May 2015 20:13:52 GMT',
+463 silly get     via: '1.1 varnish',
+463 silly get     age: '38',
+463 silly get     connection: 'keep-alive',
+463 silly get     'x-served-by': 'cache-lcy1131-LCY',
+463 silly get     'x-cache': 'HIT',
+463 silly get     'x-cache-hits': '2',
+463 silly get     'x-timer': 'S1432844029.466135,VS0,VE2782',
+463 silly get     vary: 'Accept' } ]
+464 verbose get saving underscore to /Users/Mysterion/.npm/registry.npmjs.org/underscore/.cache.json
+465 silly mapToRegistry name underscore
+466 silly mapToRegistry using default registry
+467 silly mapToRegistry registry https://registry.npmjs.org/
+468 silly mapToRegistry uri https://registry.npmjs.org/underscore
+469 verbose addRemoteTarball https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz not in flight; adding
+470 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz',
+470 verbose addRemoteTarball   '47ac53683daf832bfa952e1774417da47817ae42' ]
+471 info retry fetch attempt 1 at 22:13:52
+472 info attempt registry request try #1 at 22:13:52
+473 http fetch GET https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz
+474 silly fetchAndShaCheck shasum 3bea1f697d8540bb3904961ad50939bdee1df678
+475 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/fibers/-/fibers-1.0.5.tgz not in flight; adding
+476 verbose addTmpTarball already have metadata; skipping unpack for fibers@1.0.5
+477 silly cache afterAdd fibers@1.0.5
+478 verbose afterAdd /Users/Mysterion/.npm/fibers/1.0.5/package/package.json not in flight; writing
+479 verbose afterAdd /Users/Mysterion/.npm/fibers/1.0.5/package/package.json written
+480 http fetch 200 https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz
+481 silly fetchAndShaCheck shasum 47ac53683daf832bfa952e1774417da47817ae42
+482 verbose addTmpTarball /var/folders/t1/3tn7pd7j4m55x49j5z6gbnxm0000gn/T/npm-24736-daab67e6/registry.npmjs.org/underscore/-/underscore-1.3.3.tgz not in flight; adding
+483 verbose addTmpTarball already have metadata; skipping unpack for underscore@1.3.3
+484 silly cache afterAdd underscore@1.3.3
+485 verbose afterAdd /Users/Mysterion/.npm/underscore/1.3.3/package/package.json not in flight; writing
+486 verbose afterAdd /Users/Mysterion/.npm/underscore/1.3.3/package/package.json written
+487 verbose stack Error: read ECONNRESET
+487 verbose stack     at exports._errnoException (util.js:746:11)
+487 verbose stack     at TCP.onread (net.js:559:26)
+488 verbose cwd /Users/Mysterion/Sites/micro/public
+489 error Darwin 14.3.0
+490 error argv "node" "/usr/local/bin/npm" "install" "-g" "iron-meteor"
+491 error node v0.12.2
+492 error npm  v2.7.5
+493 error code ECONNRESET
+494 error errno ECONNRESET
+495 error syscall read
+496 error network read ECONNRESET
+496 error network This is most likely not a problem with npm itself
+496 error network and is related to network connectivity.
+496 error network In most cases you are behind a proxy or have bad network settings.
+496 error network
+496 error network If you are behind a proxy, please make sure that the
+496 error network 'proxy' config is set properly.  See: 'npm help config'
+497 verbose exit [ 1, true ]
